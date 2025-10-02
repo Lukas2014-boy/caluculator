@@ -124,5 +124,26 @@
                 </div>
             </div>
         </div>
+        <script>
+            function getHistory(){
+                return document.getElementById("history-value").innertext;
+            }
+            function printHistory(num){
+               document.getElementById("history-value").innertext=num; 
+            
+            }
+             function getOutput(){
+           return document.getElementById("output-value").innertext;
+             }
+             function printOutput(num){
+                if(num==""){
+                    document.getElementById("output-value").innertext=num;
+
+                }
+                else{
+                    document.getElementById("output-value").innertext=getFormattedNumber;
+                }
+             }
+        </script>
     </body>
 </html>
